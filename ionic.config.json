@@ -1,0 +1,7 @@
+{
+  "name": "frontendHelperRoads",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
