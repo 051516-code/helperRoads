@@ -1,0 +1,14 @@
+<!-- src/app/map/map.component.html -->
+<div class="map-container">
+  <div id="map"></div>
+  
+  <!-- Contenedor de controles de zoom -->
+  <div class="map-zoom-controls"></div>
+  
+  <!-- Botón de reubicación -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="recenterMap()">
+      <ion-icon name="locate"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</div>

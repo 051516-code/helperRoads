@@ -1,0 +1,22 @@
+
+<!-- Título del componente -->
+<h6 class="title">Most Populars in this area</h6>
+<!-- Configuración de Swiper -->
+<swiper-container
+  [slidesPerView]="3"
+  [pagination]="true"
+  [spaceBetween]="5"
+  [loop]="true"
+
+  [config]="swiperConfig"
+>
+  <swiper-slide *ngFor="let avatar of avatars; let i = index">
+    <img 
+      [src]="avatar" 
+      alt="Avatar" 
+      class="slide-image"
+      (click)="navigateToPage(i)" 
+    />
+  </swiper-slide>
+</swiper-container>
+

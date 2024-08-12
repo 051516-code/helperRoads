@@ -1,0 +1,32 @@
+/* Asegura que el Swiper tenga un tamaño adecuado y esté bien posicionado */
+.swiper-container {
+  width: 100%; /* Asegura que el Swiper ocupe el ancho completo del contenedor */
+  height: 90px; /* Ajusta la altura según sea necesario */
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Estiliza el swiper-slide para centrar las imágenes */
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Asegura que las imágenes sean circulares y ajusten correctamente en el carrusel */
+.slide-image {
+  width: 60px; /* Ajusta el tamaño de los avatares según sea necesario */
+  height: 60px;
+  border-radius: 50%; /* Hacer que las imágenes sean circulares */
+  object-fit: cover; /* Ajustar la imagen para que cubra el contenedor */
+  border: 2px solid #4caf50; /* Borde verde para los avatares, ajusta el color según prefieras */
+  margin: 0 5px; /* Espacio entre los avatares */
+}
+
+/* Estilo opcional para el título */
+.title {
+  font-size: 9px;
+  color: rgb(118, 118, 199);
+  margin-left: 15px;
+  margin-bottom: 10px; /* Espacio debajo del título */
+}

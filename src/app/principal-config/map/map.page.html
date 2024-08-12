@@ -1,0 +1,23 @@
+<ion-content [fullscreen]="true">
+  <!-- Componente MostPopular justo después del encabezado -->
+  <app-most-popular [avatars]="avatarList" [cards]="cardList"></app-most-popular>
+
+  <!-- Contenedor del mapa -->
+  <div class="map-container">
+    <app-map></app-map>
+  </div>
+</ion-content>
+
+<app-loading [show]="isLoading"></app-loading>
+
+<ion-footer>
+  <ion-button
+    expand="full"
+    shape="round"
+    color="primary"
+    (click)="showAlert()"
+    class="alert-button"
+  >
+    Alert
+  </ion-button>
+</ion-footer>

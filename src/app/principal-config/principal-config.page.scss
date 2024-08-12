@@ -1,0 +1,42 @@
+/* Ajusta el estilo del contenido del carrusel para que aparezca justo después del encabezado */
+app-most-popular {
+  margin-top: 10px; /* Ajusta el margen superior para separar del encabezado */
+}
+
+.map-container {
+  height: calc(100% - 120px); /* Ajusta la altura del contenedor del mapa para que no se superponga con el carrusel */
+  width: 100%;
+  position: relative;
+}
+
+/* Asegúrate de que el mapa se expanda adecuadamente */
+app-map {
+  height: 100%;
+  width: 100%;
+  display: block; /* Asegura que el componente del mapa se expanda correctamente */
+}
+
+/* Estilo para el botón flotante */
+.floating-button {
+  position: fixed;
+  bottom: 70px; /* Ajusta para que no se superponga con los tabs */
+  right: 20px;
+  z-index: 1000;
+}
+
+/* Estilo para ion-header y ion-toolbar */
+ion-header {
+  --background: #ffffff; /* Color de fondo del encabezado */
+}
+
+ion-toolbar {
+  --background: #f8f9fa; /* Color de fondo del toolbar */
+  --color: #000000; /* Color del texto del toolbar */
+}
+
+/* Estilo para los tabs */
+ion-tab-bar {
+  --background: #ffffff;
+  --color: #000000;
+  --color-selected: #007bff;
+}

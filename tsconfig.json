@@ -3,6 +3,10 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "typeRoots": [
+      "node_modules/@types",
+      "src/typings"  // Asegúrate de incluir la carpeta donde colocaste rbush.d.ts
+    ],
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
